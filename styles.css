@@ -9,7 +9,7 @@ td {
   border: 3px solid grey;
 }
 
-/* @keyframes th_bgcolor {
+@keyframes th_bgcolor {
   0% {
     background-color: blue;
   }
@@ -19,7 +19,7 @@ td {
   100% {
     background-color: blue;
   }
-} */
+}
 
 th,
 grid-item:nth-child(-n + 3) {

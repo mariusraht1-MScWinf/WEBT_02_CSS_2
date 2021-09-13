@@ -35,7 +35,9 @@ grid-item:nth-child(-n + 3) {
 }
 
 tr:not(:nth-child(2n)),
-.even {
+grid-item:nth-child(6n + 4),
+grid-item:nth-child(6n + 5),
+grid-item:nth-child(6n + 6) {
   background-color: gainsboro;
 }
 

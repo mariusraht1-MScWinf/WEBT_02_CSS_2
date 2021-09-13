@@ -1,0 +1,65 @@
+table,
+grid-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 3px solid grey;
+}
+
+/* @keyframes th_bgcolor {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+} */
+
+th,
+grid-item:nth-child(-n + 3) {
+  padding: 18px 8px 18px 8px;
+  color: white;
+  text-align: left;
+  background-color: blue;
+  font-weight: bold;
+
+  animation-name: th_bgcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+tr:not(:nth-child(2n)),
+.even {
+  background-color: gainsboro;
+}
+
+td,
+grid-item:not(:nth-child(-n + 3)) {
+  padding: 8px;
+}
+
+grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+
+  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+grid-item {
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+
+@media screen and (max-width: 500px) {
+  th {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
